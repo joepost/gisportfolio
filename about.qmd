@@ -1,0 +1,19 @@
+---
+title: "About"
+image: img/IMG_6440_profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: Github
+      text: Github
+      href: https://github.com/joepost
+    - icon: LinkedIn
+      text: LinkedIn
+      href: https://github.com/joepost
+---
+
+I am a spatial data analyst interested in urban systems, remote sensing, spatial epidemiology, and data development. Currently, I work in First Nations Health with the [Australian Institute of Health and Welfare (AIHW)](https://www.aihw.gov.au/).
+
+I am based in London, UK.
+
+e: [joepost51\@gmail.com](mailto:joepost51@gmail.com)
