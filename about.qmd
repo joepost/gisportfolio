@@ -9,7 +9,7 @@ about:
       href: https://github.com/joepost
     - icon: LinkedIn
       text: LinkedIn
-      href: https://github.com/joepost
+      href: https://www.linkedin.com/in/joe-post-333739b5/
 ---
 
 I am a spatial data analyst interested in urban systems, remote sensing, spatial epidemiology, and data development. Currently, I work in First Nations Health with the [Australian Institute of Health and Welfare (AIHW)](https://www.aihw.gov.au/).

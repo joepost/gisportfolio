@@ -2,7 +2,14 @@
 title: "Work"
 ---
 
-**Estimating Agricultural Dependent Populations in India**  
-The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India. 
+**Estimating Agricultural Dependent Populations in India**\
+The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.
 
-[Karnataka](img/allmaps_karnataka_20230823.png)
+![Karnataka](img/allmaps_karnataka_20230823.png)
+
+Alternatively, present these four maps: 
+
+![Cropland](img/29_karnataka_cropland_100m.png)
+![Global Human Settlement Layer](img/29_karnataka_ghsl_1km.png)
+![WorldPop](img/29_karnataka_worldpop_1km_NOLEGEND.png)
+![Agricultural Dependent Population](img/29_karnataka_adp_LEGEND.png)
