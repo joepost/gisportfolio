@@ -25,13 +25,20 @@
     "href": "work.html",
     "title": "Work",
     "section": "",
-    "text": "The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.\nFigures a–c are visualisations of the input datasets used in the population disaggregation model. Figure d shows the output of the model.\n\n\n\nKarnataka sub-region maps\n\n\nFigures e and f provide a reference for the study region, Karnataka and India.\n\n\n\nIndia reference maps"
+    "text": "The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.\nFigures a–c are visualisations of the input datasets used in the population disaggregation model. Figure d shows the output of the model.\n\n\n\nKarnataka sub-region maps\n\n\nFigures e and f provide a reference for the study region, India and the state of Karnataka.\n\n\n\nIndia reference maps"
   },
   {
     "objectID": "work.html#extended-urbanisation-in-the-gauteng-city-region",
     "href": "work.html#extended-urbanisation-in-the-gauteng-city-region",
     "title": "Work",
     "section": "Extended urbanisation in the Gauteng City Region\n",
-    "text": "Extended urbanisation in the Gauteng City Region\n\nThe Gauteng City-Region comprises the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the Gauteng City Region Observatory to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements. The work was published as part of the GCRO’s ‘Map of the Month Series’, and the full report can be found here.\nThe project investigated dimensions of gendered travel across the region, commuting distance, and sense of belonging. This work was completed as part of a field course organised by the UCL Urban Lab.\n\n\n\nGCRO Map of the month"
+    "text": "Extended urbanisation in the Gauteng City Region\n\nThe Gauteng City-Region encompasses the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the Gauteng City Region Observatory to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements. The work was published as part of the GCRO’s ‘Map of the Month Series’, and the full report can be found here.\nThe project investigated dimensions of gendered travel across the region, commuting distance, and sense of belonging. The figure below examines respondents in peripheral communities who consider this neighbourhood as their ‘home’. The significance of belonging is an indicator of patterns of rural-to-urban migration from throughout South Africa, and the phenomenon of urban migrants maintaining a connection with their rural origins, including continued investment in a rural home at the expense of urban quality of life. This work was completed as part of a field course organised by the UCL Urban Lab.\n\n\n\nGCRO Map of the month"
+  },
+  {
+    "objectID": "work.html#regional-insights-for-indigenous-communities",
+    "href": "work.html#regional-insights-for-indigenous-communities",
+    "title": "Work",
+    "section": "Regional insights for Indigenous communities",
+    "text": "Regional insights for Indigenous communities\nThe Regional Insights for Indigenous Communities (RIFIC) website is a resource developed by the Australian Institute of Health and Welfare (AIHW) to bring together a range of regional statistic about the health and wellbeing of Aboriginal and Torres Strait Islander people in Australia. The aim of the website is to provide access to data at a local level, to help communities set their priorities and participate in joint planning with government and service providers.\n\n\n\nRIFIC screenshot"
   }
 ]
