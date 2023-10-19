@@ -5,6 +5,8 @@ title: "Work"
 ## Estimating Agricultural Dependent Populations in India\
 The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.
 
+Figures a–c are visualisations of the input datasets in the population disaggregation model. Figure d shows the output of the model. 
+
 ![Karnataka](img/allmaps_karnataka_20230823.png)
 
 ## Extended urbanisation in the Gauteng City Region\
