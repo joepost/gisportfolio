@@ -7,7 +7,11 @@ The figures below comprise part of my MSc dissertation, using remote sensing and
 
 Figures *a–c* are visualisations of the input datasets used in the population disaggregation model. Figure *d* shows the output of the model. 
 
-![Karnataka](img/allmaps_karnataka_20230823.png)
+![Karnataka sub-region maps](img/allmaps_karnataka_20230823.png)
+
+Figures *e* and *f* provide a reference for the study region, Karnataka and India. 
+
+![India reference maps](img/Reference maps_version1_scalebar.png)
 
 ## Extended urbanisation in the Gauteng City Region\
 The Gauteng City-Region comprises the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the [Gauteng City Region Observatory](https://www.gcro.ac.za/) to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements. The work was published as part of the GCRO's 'Map of the Month Series', and the full report can be found [here](https://www.gcro.ac.za/outputs/map-of-the-month/detail/extended-urbanisation-gcr-gender-commuting-migration-and-belonging/).
