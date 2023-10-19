@@ -2,21 +2,14 @@
 title: "Work"
 ---
 
-**Estimating Agricultural Dependent Populations in India**\
+## Estimating Agricultural Dependent Populations in India\
 The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.
 
 ![Karnataka](img/allmaps_karnataka_20230823.png)
 
-Alternatively, present these four maps: 
+## Extended urbanisation in the Gauteng City Region\
+The Gauteng City-Region comprises the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the [Gauteng City Region Observatory](https://www.gcro.ac.za/) to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements. The work was published as part of the GCRO's 'Map of the Month Series', and the full report can be found [here](https://www.gcro.ac.za/outputs/map-of-the-month/detail/extended-urbanisation-gcr-gender-commuting-migration-and-belonging/).
 
-![Cropland](img/29_karnataka_cropland_100m.png)
-![Global Human Settlement Layer](img/29_karnataka_ghsl_1km.png)
-![WorldPop](img/29_karnataka_worldpop_1km_NOLEGEND.png)
-![Agricultural Dependent Population](img/29_karnataka_adp_LEGEND.png)
+The project investigated dimensions of gendered travel across the region, commuting distance, and sense of belonging. This work was completed as part of a field course organised by the [UCL Urban Lab](https://www.ucl.ac.uk/urban-lab/welcome-ucl-urban-laboratory). 
 
-
-
-**Extended urbanisation in the Gauteng City Region**\
-The Gauteng City-Region comprises the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the [Gauteng City Region Observatory](https://www.gcro.ac.za/) to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements.
-
-The project investigated dimensions of gendered travel across the region, commuting 
+![GCRO Map of the month](img/GCRO_Neighbourhood_home.png)
