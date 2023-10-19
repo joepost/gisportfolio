@@ -4,10 +4,10 @@ image: img/IMG_6440_profile.jpg
 about:
   template: jolla
   links:
-    - icon: Github
+    - icon: github
       text: Github
       href: https://github.com/joepost
-    - icon: LinkedIn
+    - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/joe-post-333739b5/
 ---
