@@ -8,3 +8,5 @@ title: "GIS Portfolio"
   
 Please navigate through the tabs to view static work, interactive apps, my resume, and contact details for further information.
 
+This website has been authored in reproducible markdown using [Quarto](https://quarto.org/) open-source software and [RStudio](https://posit.co/download/rstudio-desktop/), published via [Github Pages](https://pages.github.com/). 
+

@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "GIS Portfolio",
     "section": "",
-    "text": "Who am I? I am a spatial data analyst interested in urban systems, remote sensing, spatial epidemiology, and data development. Currently, I work in First Nations Health with the Australian Institute of Health and Welfare (AIHW). I am based in London, UK.\nWhat is this? This is a GIS portfolio of my previous work, with examples of projects completed throughout professional work and as part of my MSc in Urban Spatial Science, at UCL Bartlett. I’ve designed this website to accompany my application to McGregor Coxall’s Biourbanism Lab.\nPlease navigate through the tabs to view static work, interactive apps, my resume, and contact details for further information."
+    "text": "Who am I? I am a spatial data analyst interested in urban systems, remote sensing, spatial epidemiology, and data development. Currently, I work in First Nations Health with the Australian Institute of Health and Welfare (AIHW). I am based in London, UK.\nWhat is this? This is a GIS portfolio of my previous work, with examples of projects completed throughout professional work and as part of my MSc in Urban Spatial Science, at UCL Bartlett. I’ve designed this website to accompany my application to McGregor Coxall’s Biourbanism Lab.\nPlease navigate through the tabs to view static work, interactive apps, my resume, and contact details for further information.\nThis website has been authored in reproducible markdown using Quarto open-source software and RStudio, published via Github Pages."
   },
   {
     "objectID": "shinyapps.html",
@@ -25,6 +25,6 @@
     "href": "work.html",
     "title": "Work",
     "section": "",
-    "text": "Estimating Agricultural Dependent Populations in India\nThe figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.\n\n\n\nKarnataka\n\n\nAlternatively, present these four maps:"
+    "text": "Estimating Agricultural Dependent Populations in India\nThe figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India.\n\n\n\nKarnataka\n\n\nAlternatively, present these four maps:\n   \nExtended urbanisation in the Gauteng City Region\nThe Gauteng City-Region comprises the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the Gauteng City Region Observatory to explore the spatial dimensions of Quality of Life survey data, with a specific focus on peripheral settlements"
   }
 ]

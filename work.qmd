@@ -13,3 +13,10 @@ Alternatively, present these four maps:
 ![Global Human Settlement Layer](img/29_karnataka_ghsl_1km.png)
 ![WorldPop](img/29_karnataka_worldpop_1km_NOLEGEND.png)
 ![Agricultural Dependent Population](img/29_karnataka_adp_LEGEND.png)
+
+
+
+**Extended urbanisation in the Gauteng City Region**\
+The Gauteng City-Region comprises the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the [Gauteng City Region Observatory](https://www.gcro.ac.za/) to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements.
+
+The project investigated dimensions of gendered travel across the region, commuting 
