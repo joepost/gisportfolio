@@ -2,9 +2,11 @@
 title: "GIS Portfolio"
 ---
 
-**Who am I?** I am a spatial data analyst interested in urban systems, remote sensing, spatial epidemiology, and data development. Currently, I work in First Nations Health with the [Australian Institute of Health and Welfare (AIHW)](https://www.aihw.gov.au/). I am based in London, UK.
+**Who am I?**\
+I am a spatial data analyst interested in urban systems, remote sensing, spatial epidemiology, and data development. Currently, I work in First Nations Health with the [Australian Institute of Health and Welfare (AIHW)](https://www.aihw.gov.au/). I am based in London, UK.
 
-**What is this?** This is a GIS portfolio of my previous work, with examples of projects completed throughout professional work and as part of my MSc in Urban Spatial Science, at UCL Bartlett. I've designed this website to accompany my application to McGregor Coxall's [Biourbanism Lab](https://mcgregorcoxall.com/biourbanism-lab).
+**What is this?**\
+This is a GIS portfolio of my previous work, with examples of projects completed throughout professional work and as part of my MSc in Urban Spatial Science, at UCL Bartlett. I've designed this website to accompany my application to McGregor Coxall's [Biourbanism Lab](https://mcgregorcoxall.com/biourbanism-lab).
   
 Please navigate through the tabs to view static work, interactive apps, my resume, and contact details for further information.
 
