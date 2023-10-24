@@ -18,6 +18,9 @@ website:
         text: "Contact"
     background: primary
     search: true
+    google-analytics: 
+      tracking-id: "G-J5LRVPS2D6"
+      storage: none
 
 format:
   html:
