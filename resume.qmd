@@ -17,7 +17,7 @@ title: "Resume"
 
 **Senior Analyst** Australian Institute of Health and Welfare (AIHW), Indigenous Data Improvements Unit, Canberra (Remote), Oct 2022 -- Present (*part-time while studying*)
 
--   Supporting the design and implementation of Australia's National Child Death Register, including data governance, research, development of metadata standards, and stakeholder engagement with state/territory authorities.  
+-   Project lead for the design and implementation of Australia's National Child Death Register, including data governance, research, feasiblity analysis, development of metadata standards, and stakeholder engagement with state/territory authorities.  
 
 **HIV Registry Project Lead** Alfred Hospital, Epidemiology & Data Management Service, Melbourne, Jan 2022 – Jul 2022  
 

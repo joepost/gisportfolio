@@ -2,7 +2,7 @@
 title: "GIS Work"
 ---
 
-## Estimating Agricultural Dependent Populations in India\
+## Estimating Agricultural Dependent Populations in India
 The figures below comprise part of my MSc dissertation, using remote sensing and spatial disaggregation to estimate agricultural dependence in the population at a small area scale. This project involved 2 stages, (1) testing proof-of-concept on a subregion, the state of Karnataka in Western India, and (2) scaling up the analytical process to produce estimates for the whole of India. Analysis has been performed in Python, Google Earth Engine, and QGIS. 
 
 Figures *a–c* are visualisations of the input datasets used in the population disaggregation model for Karnataka: WorldPop gridded population count, GHSL Settlement Model Grid (GHS-SMOD), and DynamicWorld-derived cropland cover, respectively. Figure *d* shows the output of the model. 
@@ -10,7 +10,7 @@ Figures *a–c* are visualisations of the input datasets used in the population 
 ![Karnataka sub-region maps](img/allmaps_karnataka_20231024.png)
 
 
-## Extended urbanisation in the Gauteng City Region\
+## Extended urbanisation in the Gauteng City Region
 The Gauteng City-Region encompasses the combined metropolis of Johannesburg, Pretoria, and surrounds, and forms the largest urban agglomeration in South Africa. In this project, I worked with the [Gauteng City Region Observatory](https://www.gcro.ac.za/) to explore the spatial dimensions emerging from Quality of Life survey data, with a specific focus on peripheral settlements. The work was published as part of the GCRO's 'Map of the Month Series', and the full report can be found [here](https://www.gcro.ac.za/outputs/map-of-the-month/detail/extended-urbanisation-gcr-gender-commuting-migration-and-belonging/).
 
 The project investigated dimensions of gendered travel across the region, commuting distance, and sense of belonging. The figure below examines respondents in peripheral communities who consider this neighbourhood as their 'home'. The significance of belonging is an indicator of patterns of rural-to-urban migration from throughout South Africa, and the phenomenon of urban migrants maintaining a connection with their rural origins, including continued investment in a rural home at the expense of urban quality of life. This work was completed as part of a field course organised by the [UCL Urban Lab](https://www.ucl.ac.uk/urban-lab/welcome-ucl-urban-laboratory). 

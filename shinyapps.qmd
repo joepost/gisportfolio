@@ -2,5 +2,5 @@
 title: "Shiny Apps"
 ---
 
-**Blue plaque density in London: an interactive map**\
+**Blue plaque density in London: an interactive map**
 This shiny app presents an interactive map built in R and leaflet, that calculates the blue plaque density by borough in London. It was developed as part of the course CASA0005 GIS.
