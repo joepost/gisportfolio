@@ -7,11 +7,7 @@ The figures below comprise part of my MSc dissertation, using remote sensing and
 
 Figures *a–c* are visualisations of the input datasets used in the population disaggregation model for Karnataka: WorldPop gridded population count, GHSL Settlement Model Grid (GHS-SMOD), and DynamicWorld-derived cropland cover, respectively. Figure *d* shows the output of the model. 
 
-![Karnataka sub-region maps](img/allmaps_karnataka_20230823.png)
-
-Figures *e* and *f* provide a reference for the study region, India and the state of Karnataka. 
-
-![India reference maps](img/Reference maps_version1_scalebar.png)
+![Karnataka sub-region maps](img/allmaps_karnataka_20231024.png)
 
 
 ## Extended urbanisation in the Gauteng City Region\

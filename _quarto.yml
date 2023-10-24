@@ -21,7 +21,7 @@ website:
 
 format:
   html:
-    theme: litera
+    theme: flatly #litera
     fontsize: medium
     css: styles.css
     toc: true
