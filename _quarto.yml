@@ -18,7 +18,7 @@ website:
         text: "Contact"
     background: primary
     search: true
-    google-analytics: "G-J5LRVPS2D6"
+  google-analytics: "G-J5LRVPS2D6"
 
 format:
   html:
