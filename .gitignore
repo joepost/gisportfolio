@@ -4,3 +4,7 @@
 .Ruserdata
 
 /.quarto/
+
+
+# Exclude Large Folders
+/envs

@@ -1,6 +1,18 @@
 ---
-title: "Shiny Apps"
+title: "Interactive Maps"
 ---
 
-**Blue plaque density in London: an interactive map**
-This shiny app presents an interactive map built in R and leaflet, that calculates the blue plaque density by borough in London. It was developed as part of the course CASA0005 GIS.
+**Blue plaque density in London: an interactive map** This shiny app presents an interactive map built in R and leaflet, that calculates the blue plaque density by borough in London. It was developed as part of the course CASA0005 GIS.
+
+```{python}
+from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles
+m = Map(
+  basemap=basemap_to_tiles(
+    basemaps.NASAGIBS.ModisTerraTrueColorCR, "2017-04-08"
+  ),
+  center=(52.204793, 360.121558),
+  zoom=4
+)
+m.add_layer(Marker(location=(52.204793, 360.121558)))
+m
+```
