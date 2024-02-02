@@ -164,6 +164,10 @@ gtag('config', 'G-J5LRVPS2D6', { 'anonymize_ip': true});
  <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link active" href="./shinyapps.html" aria-current="page">
+ <span class="menu-text">Interactive maps</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./resume.html">
  <span class="menu-text">Resume</span></a>
   </li>  
@@ -182,7 +186,13 @@ gtag('config', 'G-J5LRVPS2D6', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#spatial-distribution-of-residential-property-prices-1995---2019" id="toc-spatial-distribution-of-residential-property-prices-1995---2019" class="nav-link active" data-scroll-target="#spatial-distribution-of-residential-property-prices-1995---2019">Spatial distribution of residential property prices, 1995 - 2019</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -204,7 +214,25 @@ gtag('config', 'G-J5LRVPS2D6', { 'anonymize_ip': true});
 
 </header>
 
-<p><strong>Blue plaque density in London: an interactive map</strong> This shiny app presents an interactive map built in R and leaflet, that calculates the blue plaque density by borough in London. It was developed as part of the course CASA0005 GIS.</p>
+<section id="spatial-distribution-of-residential-property-prices-1995---2019" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-distribution-of-residential-property-prices-1995---2019">Spatial distribution of residential property prices, 1995 - 2019</h2>
+<p>This map visualises the spatial distribution of Lower Layer Super Output Areas (LSOA) median price paid deciles for residential property sold between 1995 and 2019, for the local authority district of Hackney, London.</p>
+<p>Data is sourced entirely from API data services, including:</p>
+<p><a href="https://osdatahub.os.uk/">Ordnance Survey (OS) Data Hub</a></p>
+<ul>
+<li><p>OS Features API - <em>allows user to query features within a number of OS’s data products. An Open Geospatial Consortium (OGC) compliant web feature service (WFS).</em></p></li>
+<li><p>OS Maps API - <em>provides access to OS base mapping in a number of different styles and two projections, Web Mercator or British National Grid. Two end points are available: ZXY or Web Map Tile Service (WMTS).</em></p></li>
+<li><p>OS Downloads API - <em>enables bulk download of OS open data products.</em></p></li>
+</ul>
+<p><a href="https://landregistry.data.gov.uk/app/root/doc/ppd">HM Land Registry</a></p>
+<ul>
+<li>HM LR Linked Data API - <em>enables querying of HM LR price paid data, transaction data, and the UK House Price Index.</em></li>
+</ul>
+<p><a href="https://geoportal.statistics.gov.uk/"><em>Office for National Statistics (ONS)</em></a></p>
+<ul>
+<li><p>ONS Open Geography Portal WFS API - <em>OGC-compliant WFS that allows users to query features within a number of ONS’s open data products.</em></p></li>
+<li><p>ONS Open Geography Portal ArcGIS REST API - <em>an ESRI API specification that allows users to query features within ONS’s open data products.</em></p></li>
+</ul>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ipyleaflet <span class="im">import</span> Map, Marker, basemaps, basemap_to_tiles</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> Map(</span>
@@ -218,16 +246,67 @@ gtag('config', 'G-J5LRVPS2D6', { 'anonymize_ip': true});
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"43e3d81f9e37416a832eb3dc99d288e2","version_major":2,"version_minor":0}
+{"model_id":"672e1bef230843809eac8b4c41c49d87","version_major":2,"version_minor":0}
 </script>
 </div>
 </div>
+<p>Test</p>
+<ul>
+<li><p>List item 1</p></li>
+<li><p>List item 2</p></li>
+<li><p>List item 3</p></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 81%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Ordnance Survey (OS) Data Hub</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>OS Features API</td>
+<td>Allows user to query features within a number of OS’s data products. An Open Geospatial Consortium (OGC) compliant web feature service (WFS).</td>
+</tr>
+<tr class="odd">
+<td>OS Maps API</td>
+<td>Provides access to OS base mapping in a number of different styles and two projections, Web Mercator or British National Grid. Two end points are available: ZXY or Web Map Tile Service (WMTS).</td>
+</tr>
+<tr class="even">
+<td>OS Downloads API</td>
+<td>Enables bulk download of OS open data products.</td>
+</tr>
+<tr class="odd">
+<td><strong>HM Land Registry</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>HM LR Linked Data API</td>
+<td>Enables querying of HM LR price paid data, transaction data, and the UK House Price Index.</td>
+</tr>
+<tr class="odd">
+<td><strong>Office for National Statistics (ONS)</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ONS Open Geography Portal WFS API</td>
+<td>OGC-compliant WFS that allows users to query features within a number of ONS’s open data products.</td>
+</tr>
+<tr class="odd">
+<td>ONS Open Geography Portal ArcGIS REST API</td>
+<td>ESRI API specification that allows users to query features within ONS’s open data products.</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script type="application/vnd.jupyter.widget-state+json">
-{"state":{"12b07ae948cd450b9a6a7d396775c28d":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletZoomControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletZoomControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletZoomControlView","options":["position","zoom_in_text","zoom_in_title","zoom_out_text","zoom_out_title"],"position":"topleft","zoom_in_text":"+","zoom_in_title":"Zoom in","zoom_out_text":"-","zoom_out_title":"Zoom out"}},"26951bd5bceb426e9476725564cfd61d":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"43e3d81f9e37416a832eb3dc99d288e2":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapModel","state":{"_dom_classes":[],"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletMapView","bottom":0,"bounce_at_zoom_limits":true,"box_zoom":true,"center":[52.204793,360.121558],"close_popup_on_click":true,"controls":["IPY_MODEL_12b07ae948cd450b9a6a7d396775c28d","IPY_MODEL_aa1c692ba4864f9e939b0c188443ba68"],"crs":{"custom":false,"name":"EPSG3857"},"default_style":"IPY_MODEL_acd284cd6348487f8379f4038a3324d7","double_click_zoom":true,"dragging":true,"dragging_style":"IPY_MODEL_4bf2ffebb77d453c887f313ec2c1e6aa","east":0,"fullscreen":false,"inertia":true,"inertia_deceleration":3000,"inertia_max_speed":1500,"interpolation":"bilinear","keyboard":true,"keyboard_pan_offset":80,"keyboard_zoom_offset":1,"layers":["IPY_MODEL_79dd0f9d176a4898a76bb4c1e2fe6fbc","IPY_MODEL_872a732a9d9e4a7cb5076e30c722d04c"],"layout":"IPY_MODEL_26951bd5bceb426e9476725564cfd61d","left":9007199254740991,"max_zoom":null,"min_zoom":null,"modisdate":"2024-01-30","north":0,"options":["bounce_at_zoom_limits","box_zoom","center","close_popup_on_click","double_click_zoom","dragging","fullscreen","inertia","inertia_deceleration","inertia_max_speed","interpolation","keyboard","keyboard_pan_offset","keyboard_zoom_offset","max_zoom","min_zoom","prefer_canvas","scroll_wheel_zoom","tap","tap_tolerance","touch_zoom","world_copy_jump","zoom","zoom_animation_threshold","zoom_delta","zoom_snap"],"panes":{},"prefer_canvas":false,"right":0,"scroll_wheel_zoom":false,"south":0,"style":"IPY_MODEL_5c3ad9ec68fb4ea18e0ae1974cad4dcd","tabbable":null,"tap":true,"tap_tolerance":15,"tooltip":null,"top":9007199254740991,"touch_zoom":true,"west":0,"window_url":"","world_copy_jump":false,"zoom":4,"zoom_animation_threshold":4,"zoom_delta":1,"zoom_snap":1}},"4bf2ffebb77d453c887f313ec2c1e6aa":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"move"}},"5c3ad9ec68fb4ea18e0ae1974cad4dcd":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"79dd0f9d176a4898a76bb4c1e2fe6fbc":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletTileLayerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletTileLayerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletTileLayerView","attribution":"Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.","base":true,"bottom":true,"bounds":null,"detect_retina":false,"loading":false,"max_native_zoom":null,"max_zoom":9,"min_native_zoom":null,"min_zoom":1,"name":"NASAGIBS.ModisTerraTrueColorCR","no_wrap":false,"opacity":1,"options":["attribution","bounds","detect_retina","max_native_zoom","max_zoom","min_native_zoom","min_zoom","no_wrap","tile_size","tms","zoom_offset"],"pane":"","popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"show_loading":false,"subitems":[],"tile_size":256,"tms":false,"url":"https://map1.vis.earthdata.nasa.gov/wmts-webmerc/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-04-08/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg","visible":true,"zoom_offset":0}},"872a732a9d9e4a7cb5076e30c722d04c":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMarkerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMarkerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletMarkerView","alt":"","base":false,"bottom":false,"draggable":true,"icon":null,"keyboard":true,"location":[52.204793,360.121558],"name":"","opacity":1,"options":["alt","draggable","keyboard","rise_offset","rise_on_hover","rotation_angle","rotation_origin","title","z_index_offset"],"pane":"","popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"rise_offset":250,"rise_on_hover":false,"rotation_angle":0,"rotation_origin":"","subitems":[],"title":"","visible":true,"z_index_offset":0}},"aa1c692ba4864f9e939b0c188443ba68":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletAttributionControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletAttributionControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletAttributionControlView","options":["position","prefix"],"position":"bottomright","prefix":"ipyleaflet"}},"acd284cd6348487f8379f4038a3324d7":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}}},"version_major":2,"version_minor":0}
+{"state":{"0ab905b2c33c43f893b1019fdf9e9ecf":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletAttributionControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletAttributionControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletAttributionControlView","options":["position","prefix"],"position":"bottomright","prefix":"ipyleaflet"}},"4ae582b128394e81ba700ba4947b82c9":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"672e1bef230843809eac8b4c41c49d87":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapModel","state":{"_dom_classes":[],"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletMapView","bottom":0,"bounce_at_zoom_limits":true,"box_zoom":true,"center":[52.204793,360.121558],"close_popup_on_click":true,"controls":["IPY_MODEL_a6670cb8dfbd4d04b2783c8dc525b2b4","IPY_MODEL_0ab905b2c33c43f893b1019fdf9e9ecf"],"crs":{"custom":false,"name":"EPSG3857"},"default_style":"IPY_MODEL_eca461eb5e0749408be379b2e1241553","double_click_zoom":true,"dragging":true,"dragging_style":"IPY_MODEL_9a7f2ff23f98421fbd00623b0560c259","east":0,"fullscreen":false,"inertia":true,"inertia_deceleration":3000,"inertia_max_speed":1500,"interpolation":"bilinear","keyboard":true,"keyboard_pan_offset":80,"keyboard_zoom_offset":1,"layers":["IPY_MODEL_eff60e59924748c0aaaa4af7d7aaf7d9","IPY_MODEL_7be87aacf4e647cf8c0ecc84582677a3"],"layout":"IPY_MODEL_b06e676a98d74b5689df55a57b3177e3","left":9007199254740991,"max_zoom":null,"min_zoom":null,"modisdate":"2024-02-01","north":0,"options":["bounce_at_zoom_limits","box_zoom","center","close_popup_on_click","double_click_zoom","dragging","fullscreen","inertia","inertia_deceleration","inertia_max_speed","interpolation","keyboard","keyboard_pan_offset","keyboard_zoom_offset","max_zoom","min_zoom","prefer_canvas","scroll_wheel_zoom","tap","tap_tolerance","touch_zoom","world_copy_jump","zoom","zoom_animation_threshold","zoom_delta","zoom_snap"],"panes":{},"prefer_canvas":false,"right":0,"scroll_wheel_zoom":false,"south":0,"style":"IPY_MODEL_4ae582b128394e81ba700ba4947b82c9","tabbable":null,"tap":true,"tap_tolerance":15,"tooltip":null,"top":9007199254740991,"touch_zoom":true,"west":0,"window_url":"","world_copy_jump":false,"zoom":4,"zoom_animation_threshold":4,"zoom_delta":1,"zoom_snap":1}},"7be87aacf4e647cf8c0ecc84582677a3":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMarkerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMarkerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletMarkerView","alt":"","base":false,"bottom":false,"draggable":true,"icon":null,"keyboard":true,"location":[52.204793,360.121558],"name":"","opacity":1,"options":["alt","draggable","keyboard","rise_offset","rise_on_hover","rotation_angle","rotation_origin","title","z_index_offset"],"pane":"","popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"rise_offset":250,"rise_on_hover":false,"rotation_angle":0,"rotation_origin":"","subitems":[],"title":"","visible":true,"z_index_offset":0}},"9a7f2ff23f98421fbd00623b0560c259":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"move"}},"a6670cb8dfbd4d04b2783c8dc525b2b4":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletZoomControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletZoomControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletZoomControlView","options":["position","zoom_in_text","zoom_in_title","zoom_out_text","zoom_out_title"],"position":"topleft","zoom_in_text":"+","zoom_in_title":"Zoom in","zoom_out_text":"-","zoom_out_title":"Zoom out"}},"b06e676a98d74b5689df55a57b3177e3":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"eca461eb5e0749408be379b2e1241553":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"eff60e59924748c0aaaa4af7d7aaf7d9":{"model_module":"jupyter-leaflet","model_module_version":"^0.17","model_name":"LeafletTileLayerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.17","_model_name":"LeafletTileLayerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.17","_view_name":"LeafletTileLayerView","attribution":"Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.","base":true,"bottom":true,"bounds":null,"detect_retina":false,"loading":false,"max_native_zoom":null,"max_zoom":9,"min_native_zoom":null,"min_zoom":1,"name":"NASAGIBS.ModisTerraTrueColorCR","no_wrap":false,"opacity":1,"options":["attribution","bounds","detect_retina","max_native_zoom","max_zoom","min_native_zoom","min_zoom","no_wrap","tile_size","tms","zoom_offset"],"pane":"","popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"show_loading":false,"subitems":[],"tile_size":256,"tms":false,"url":"https://map1.vis.earthdata.nasa.gov/wmts-webmerc/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-04-08/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg","visible":true,"zoom_offset":0}}},"version_major":2,"version_minor":0}
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

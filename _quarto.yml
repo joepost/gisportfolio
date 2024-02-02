@@ -10,8 +10,8 @@ website:
         text: "Home"
       - file: work.qmd
         text: "Work"
-      # - file: shinyapps.qmd
-      #   text: "Shiny Apps"
+      - file: shinyapps.qmd
+        text: "Interactive maps"
       - file: resume.qmd
         text: "Resume"
       - file: about.qmd
