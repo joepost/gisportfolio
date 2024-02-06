@@ -1,8 +1,10 @@
 ---
 title: "Interactive Maps"
+execute: 
+  echo: false
 ---
 
-## Spatial distribution of residential property prices, 1995 - 2019
+## Spatial distribution of residential property prices in Hackney, 1995 - 2019
 
 This map visualises the spatial distribution of Lower Layer Super Output Areas (LSOA) median price paid deciles for residential property sold between 1995 and 2019, for the local authority district of Hackney, London.
 
