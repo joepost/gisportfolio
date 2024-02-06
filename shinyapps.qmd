@@ -6,55 +6,63 @@ title: "Interactive Maps"
 
 This map visualises the spatial distribution of Lower Layer Super Output Areas (LSOA) median price paid deciles for residential property sold between 1995 and 2019, for the local authority district of Hackney, London.
 
-Data is sourced entirely from API data services, including:
+Data is sourced entirely from API data services, including the [**Ordnance Survey (OS) Data Hub**](https://osdatahub.os.uk/), the [**HM Land Registry**](https://landregistry.data.gov.uk/app/root/doc/ppd), and the Office for National Statistics (ONS) [**Open Geography Portal**](https://geoportal.statistics.gov.uk/).
 
-[Ordnance Survey (OS) Data Hub](https://osdatahub.os.uk/)
-
--   OS Features API - *allows user to query features within a number of OS's data products. An Open Geospatial Consortium (OGC) compliant web feature service (WFS).*
-
--   OS Maps API - *provides access to OS base mapping in a number of different styles and two projections, Web Mercator or British National Grid. Two end points are available: ZXY or Web Map Tile Service (WMTS).*
-
--   OS Downloads API - *enables bulk download of OS open data products.*
-
-[HM Land Registry](https://landregistry.data.gov.uk/app/root/doc/ppd)
-
--   HM LR Linked Data API - *enables querying of HM LR price paid data, transaction data, and the UK House Price Index.*
-
-[*Office for National Statistics (ONS)*](https://geoportal.statistics.gov.uk/)
-
--   ONS Open Geography Portal WFS API - *OGC-compliant WFS that allows users to query features within a number of ONS's open data products.*
-
--   ONS Open Geography Portal ArcGIS REST API - *an ESRI API specification that allows users to query features within ONS's open data products.*
 
 ```{python}
-from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles
-m = Map(
-  basemap=basemap_to_tiles(
-    basemaps.NASAGIBS.ModisTerraTrueColorCR, "2017-04-08"
-  ),
-  center=(52.204793, 360.121558),
-  zoom=4
+import os
+import fiona
+import folium
+import geopandas as gpd
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from datetime import datetime
+from folium.plugins import FloatImage
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+
+
+# ======================================================================================
+# Read in dataframes
+gdf_build_lsoa_diss = gpd.read_file("data/gdf_build_lsoa_diss.geojson")
+gdf_yg_merge_churn = gpd.read_file("data/gdf_yg_merge_churn.geojson")
+
+
+# ======================================================================================
+# Map interactively using folium
+
+# Obtain current date-time
+date = datetime.now()
+
+
+# Create a folium basemap
+m = gdf_build_lsoa_diss.explore(
+        color='#a4a5a6',            # '#eaeaea',
+        tiles="CartoDB positron",   # use "CartoDB positron" tiles
+        attr='Contains OS data © Crown copyright and database right {}'.format(date.year),
+        control_scale=False,        # remove scale (overlaps with OS logo)
+        tooltip=False,              # deactivate tooltip for base map features
+        style_kwds = {'stroke':False, 'fillOpacity':0.3},
+        highlight=False             # deactivate highlighting for base map features
+    )
+
+gdf_yg_merge_churn.explore(
+    m=m,
+    column="decile_change",     # make choropleth based on column name
+    highlight=True,
+    highlight_kwds={'stroke':True, 'fillOpacity':1},    # specifies the formatting of highlighted features
+    tooltip='decile_change',
+    style_kwds = {'stroke':False, 'fillOpacity':0.7}
 )
-m.add_layer(Marker(location=(52.204793, 360.121558)))
+
+# OS logo image
+logo_url = 'https://labs.os.uk/public/os-api-branding/v0.1.0/img/os-logo-maps.svg'
+# Folium FloatImage plugin for displaying an image on the map
+float_image = FloatImage(logo_url, bottom=1, left=1)
+# Add OS logo image to map
+float_image.add_to(m)
+
+# Return map object
 m
+
 ```
 
-Test
-
--   List item 1
-
--   List item 2
-
--   List item 3
-
-|                                           |                                                                                                                                                                                                  |
-|-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Ordnance Survey (OS) Data Hub**         |                                                                                                                                                                                                  |
-| OS Features API                           | Allows user to query features within a number of OS's data products. An Open Geospatial Consortium (OGC) compliant web feature service (WFS).                                                    |
-| OS Maps API                               | Provides access to OS base mapping in a number of different styles and two projections, Web Mercator or British National Grid. Two end points are available: ZXY or Web Map Tile Service (WMTS). |
-| OS Downloads API                          | Enables bulk download of OS open data products.                                                                                                                                                  |
-| **HM Land Registry**                      |                                                                                                                                                                                                  |
-| HM LR Linked Data API                     | Enables querying of HM LR price paid data, transaction data, and the UK House Price Index.                                                                                                       |
-| **Office for National Statistics (ONS)**  |                                                                                                                                                                                                  |
-| ONS Open Geography Portal WFS API         | OGC-compliant WFS that allows users to query features within a number of ONS's open data products.                                                                                               |
-| ONS Open Geography Portal ArcGIS REST API | ESRI API specification that allows users to query features within ONS's open data products.                                                                                                      |

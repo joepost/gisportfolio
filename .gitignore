@@ -8,3 +8,4 @@
 
 # Exclude Large Folders
 /envs
+/data
